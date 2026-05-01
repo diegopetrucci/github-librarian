@@ -1,0 +1,21 @@
+{
+  "name": "github-librarian",
+  "version": "1.0.0",
+  "description": "Research GitHub repos via gh and return concise path-first findings.",
+  "author": {
+    "name": "Diego Petrucci",
+    "url": "https://github.com/diegopetrucci"
+  },
+  "repository": "https://github.com/diegopetrucci/github-librarian",
+  "license": "MIT",
+  "keywords": ["github", "research", "code-search", "developer-tools"],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GitHub Librarian",
+    "shortDescription": "Research GitHub code with evidence",
+    "longDescription": "Use gh to investigate GitHub repositories and return compact findings with exact path and line evidence.",
+    "developerName": "Diego Petrucci",
+    "category": "Developer Tools",
+    "capabilities": ["Read", "Execute"]
+  }
+}

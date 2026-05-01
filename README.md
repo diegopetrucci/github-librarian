@@ -1,10 +1,10 @@
 # GitHub Librarian
 
-An [agent skill](https://agentskills.io/home) that spawns an isolated subagent to investigate GitHub repositories via the `gh` CLI and return concise, path-first findings with line-ranged evidence.
+Researches GitHub repos via the `gh` CLI and returns concise, path-first findings with line-ranged evidence.
 
 ## What it does
 
-When the answer to a question likely lives in one or more GitHub repos and you don't want to burn turns on exploratory `gh search`, tree probes, and file reads in your main session, this skill delegates the search to an isolated subagent. It:
+When the answer to a question likely lives in one or more GitHub repos and you don't want exploratory `gh search`, tree probes, and file reads polluting your main session, github-librarian takes that work elsewhere — to an isolated subagent when one's available — and reports back with concise path-first findings. It:
 
 - Runs targeted `gh search code`, tree, and contents API calls in a fresh `/tmp` workspace
 - Caches only the files needed to prove an answer

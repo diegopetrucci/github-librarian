@@ -14,9 +14,9 @@ When the answer to a question likely lives in one or more GitHub repos and you d
 
 ## Installation
 
-Two install paths exist. They are **not** equivalent — pick based on your client.
+Two install paths exist. They are **not** equivalent — pick based on your harness.
 
-### Recommended: as a Claude Code plugin (real subagent isolation)
+### As a Claude Code plugin (real subagent isolation)
 
 If you're on Claude Code, install via the marketplace. This wires up the `github-librarian` agent and `/github-librarian` slash command, and uses Claude Code's built-in Task subagent so the investigation runs in a separate context — `gh` responses, cached files, and tree dumps stay out of your main conversation.
 
@@ -25,15 +25,15 @@ If you're on Claude Code, install via the marketplace. This wires up the `github
 /plugin install github-librarian@diegopetrucci-claude-plugins
 ```
 
-### Fallback: as a skill via `npx skills` (other Claude clients)
+### As a skill via `npx skills`
 
-For Claude clients without Claude Code's Task subagent (claude.ai, Claude Desktop, third-party hosts, etc.), install as a skill:
+For all other harnesses, use `npx`:
 
 ```bash
 npx skills add https://github.com/diegopetrucci/github-librarian --skill github-librarian
 ```
 
-The skill's `SKILL.md` will delegate to a Task / general-purpose subagent if one is available, and fall back to running inline in your session otherwise. **In the inline-fallback case there is no context isolation** — every `gh` response and file Read lands in the main conversation. If you have access to Claude Code, prefer the plugin install above.
+The skill's `SKILL.md` will delegate to a Task / general-purpose subagent if one is available, and fall back to running inline in your session otherwise. **In the inline-fallback case there is no context isolation** — every `gh` response and file Read lands in the main conversation.
 
 ## Usage
 

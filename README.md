@@ -14,12 +14,6 @@ When the answer to a question likely lives in one or more GitHub repos and you d
 
 ## Installation
 
-### As a skill
-
-```bash
-npx skills add https://github.com/diegopetrucci/github-librarian --skill github-librarian
-```
-
 ### As a Claude Code plugin
 
 ```shell

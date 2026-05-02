@@ -14,7 +14,7 @@ When the answer to a question likely lives in one or more GitHub repos and you d
 
 ## Installation
 
-Two install paths exist. They are **not** equivalent — pick based on your harness.
+Three install paths exist. They are **not** equivalent — pick based on your harness.
 
 ### As a Claude Code plugin (real subagent isolation)
 
@@ -24,6 +24,16 @@ If you're on Claude Code, install via the marketplace. This wires up the `github
 /plugin marketplace add diegopetrucci/ai-agents-skills
 /plugin install github-librarian@diegopetrucci-claude-plugins
 ```
+
+### As a Codex plugin
+
+If you're on Codex, add the marketplace and then install the plugin from the Codex plugin directory.
+
+```shell
+codex plugin marketplace add diegopetrucci/ai-agents-skills
+```
+
+Restart Codex, then install `github-librarian` from the "Diego Petrucci Agent Skills" marketplace in the plugin directory.
 
 ### As a skill via `npx skills`
 

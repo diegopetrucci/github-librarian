@@ -1,5 +1,9 @@
 {
   "name": "github-librarian",
   "description": "GitHub research scout — runs targeted gh investigation in an isolated subagent session and returns concise path-first findings with line-ranged evidence",
-  "version": "1.1.0"
+  "version": "1.1.1",
+  "author": {
+    "name": "Diego Petrucci",
+    "url": "https://github.com/diegopetrucci"
+  }
 }
